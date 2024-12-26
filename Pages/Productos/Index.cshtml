@@ -1,0 +1,140 @@
+@page
+@model Panaderia.Pages.Productos.Index
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="text-center mb-3">Lista de Ventas</h2>
+<a class="btn btn-primary mb-3" href="/Productos/Crear">Agregar Venta</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>           
+            <th>Productos vendidos</th>
+            <th>Membresia del cliente</del></th>
+            <th>Empleado encargado</th>          
+            <th>Total</th>
+            <th>Metodo de pago</th>
+            <th>Fecha y hora</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var sell in Model.VentaList){
+            <tr>
+                <td>@sell.Id_venta</td>
+                <td>@sell.Productos</td>
+                <td>@sell.Membresia</td>
+                <td>@sell.Encargado</td>
+                <td>@sell.Total</td>
+                <td>@sell.Metodo</td>
+                <td>@sell.FechaH</td>
+                
+                <td style="white-space:nowrap">
+                    <a class="btn btn-primary btn-sm" href="/Productos/Editar?Id_venta=@sell.Id_venta">Editar</a>
+                    <a class="btn btn-danger btn-sm" href="/Productos/Eliminar?id_venta=@sell.Id_venta">Eliminar</a>
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+</table>
+
+<!-- Logo -->
+<div class="logo-container">
+    <img src="/Imagenes/pan.jpeg" alt="Logo Panadería" style="max-width: 100px; opacity: 0.8;" />
+</div>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fdf5e6; /* Fondo cálido */
+        color: #5a3d31; /* Color de texto similar al logo */
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        color: #c96a43; /* Tono cálido para encabezado */
+        text-shadow: 1px 1px 2px #5a3d31;
+    }
+
+    .btn {
+        background-color: #c96a43;
+        color: #fff;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #5a3d31;
+    }
+
+    .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        background-color: #fff;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .table th, .table td {
+        padding: 0.75rem;
+        text-align: left;
+        vertical-align: top;
+        border: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #f4e3d1; /* Fondo cálido para encabezado */
+        color: #5a3d31;
+        font-weight: bold;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #f9f4f1; /* Alternancia de color */
+    }
+
+    .table tbody tr:hover {
+        background-color: #f4e3d1; /* Color al pasar el cursor */
+    }
+
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .btn-primary {
+        background-color: #c96a43;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: #5a3d31;
+    }
+
+    .btn-danger {
+        background-color: #d9534f;
+        border: none;
+    }
+
+    .btn-danger:hover {
+        background-color: #c9302c;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: none;
+    }
+
+    .logo-container img {
+        max-height: 100px;
+        max-width: 100px;
+    }
+
+
+</style>

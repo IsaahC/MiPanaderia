@@ -1,0 +1,95 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="content-container">
+    <div class="welcome-container">
+        <h1 class="display-4">Bienvenido al sistema de registro</h1>
+    </div>
+
+    <div class="carousel-container">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Imagenes/image1.jpg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Imagenes/image2.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Imagenes/image3.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo-container">
+        <img src="/Imagenes/pan.jpeg" alt="Logo de la panadería">
+    </div>
+</footer>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fdf5e6; /* Fondo cálido */
+        color: #5a3d31; /* Color de texto */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 0 2rem;
+    }
+
+    .welcome-container {
+        flex: 1;
+        padding: 2rem;
+    }
+
+    h1 {
+        color: #c96a43; /* Encabezado cálido */
+        text-shadow: 1px 1px 2px #5a3d31;
+    }
+
+    .carousel-container {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .carousel-inner img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: none;
+    }
+
+    .logo-container img {
+        max-height: 100px;
+        max-width: 100px;
+    }
+</style>

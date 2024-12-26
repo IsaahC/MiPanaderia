@@ -1,0 +1,31 @@
+@page
+@model Panaderia.Pages.Productos.Eliminar
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+<div class="mx-auto rounded border p-4" style="max-width: 400px;">
+    <h2 class="text-center mb-3">Eliminar venta</h2>
+    <hr />
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-danger">
+            @Model.ErrorMessage
+        </div>
+    }
+    <p>¿Confirma eliminar la venta?</p>
+    <p><strong>Venta ID:</strong> @Request.Query["id_venta"]</p>
+    <hr />
+    <form method="post">
+        <input type="hidden" name="id_venta" value="@Request.Query["id_venta"]" />
+        <div class="row">
+            <div class="col-sm-6 d-grid">
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+            </div>
+            <div class="col-sm-6 d-grid">
+                <a class="btn btn-outline-secondary" href="/Productos/Index">Cancelar</a>
+            </div>
+        </div>
+    </form>
+</div>
