@@ -12,8 +12,16 @@ public class IndexModel : PageModel
         _logger = logger;
     }
 
-    public void OnGet()
+    public IActionResult OnGet()
     {
+        // Validar si el usuario está autenticado
+        if (HttpContext.Session.GetString("UserAuthenticated") != "true")
+        {
+            // Si no está autenticado, redirigir a la página de Login
+            return RedirectToPage("/Login");
+        }
 
+        // Código adicional para manejar la lógica de la página
+        return Page();
     }
 }

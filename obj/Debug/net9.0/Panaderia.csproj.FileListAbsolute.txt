@@ -79,8 +79,6 @@ C:\Panaderia\obj\Debug\net9.0\compressed\yfvsavdbfy-2z0ns9nrw6.gz
 C:\Panaderia\obj\Debug\net9.0\compressed\4n5twfo93v-muycvpuwrr.gz
 C:\Panaderia\obj\Debug\net9.0\compressed\9dpb8qgrh1-87fc7y1x7t.gz
 C:\Panaderia\obj\Debug\net9.0\compressed\eg4jm9oflw-mlv21k5csn.gz
-C:\Panaderia\obj\Debug\net9.0\compressed\lj13ztw4wl-10ssn9521n.gz
-C:\Panaderia\obj\Debug\net9.0\compressed\yv4m5v100r-10ssn9521n.gz
 C:\Panaderia\obj\Debug\net9.0\staticwebassets.build.json
 C:\Panaderia\obj\Debug\net9.0\staticwebassets.development.json
 C:\Panaderia\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -134,3 +132,5 @@ C:\Panaderia\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Panaderia\obj\Debug\net9.0\Panaderia.csproj.AssemblyReference.cache
 C:\Panaderia\obj\Debug\net9.0\Panaderia.csproj.Up2Date
 C:\Panaderia\obj\Debug\net9.0\Panaderia.sourcelink.json
+C:\Panaderia\obj\Debug\net9.0\compressed\lj13ztw4wl-10ssn9521n.gz
+C:\Panaderia\obj\Debug\net9.0\compressed\yv4m5v100r-10ssn9521n.gz

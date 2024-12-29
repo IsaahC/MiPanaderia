@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Panaderia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bce71d028dc7ead7a5effba3837b2ccb97f85c4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea8f0cf6aabac4821b44d91241f93d9788312831")]
 [assembly: System.Reflection.AssemblyProductAttribute("Panaderia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Panaderia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
