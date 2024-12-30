@@ -30,7 +30,8 @@ namespace Panaderia.Pages.Productos
 
         private void eliminarProducto(int id_venta)
         {
-            string connectionString = "Server=localhost\\SQLEXPRESS;Database=Panes;Trusted_Connection=True;TrustServerCertificate=True;";
+             string connectionString = "Server=DESKTOP-LOAE6OF;Database=Panes;Trusted_Connection=True;TrustServerCertificate=True;";
+
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();

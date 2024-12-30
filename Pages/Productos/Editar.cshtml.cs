@@ -32,7 +32,7 @@ namespace Panaderia.Pages.Productos
         {
             try
             {
-                string connectionString = "Server=localhost\\SQLEXPRESS;Database=Panes;Trusted_Connection=True;TrustServerCertificate=True;";
+                string connectionString = "Server=DESKTOP-LOAE6OF;Database=Panes;Trusted_Connection=True;TrustServerCertificate=True;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
@@ -76,7 +76,7 @@ namespace Panaderia.Pages.Productos
 
             try
             {
-                string connectionString = "Server=localhost\\SQLEXPRESS;Database=Panes;Trusted_Connection=True;TrustServerCertificate=True;";
+                string connectionString = "Server=DESKTOP-LOAE6OF;Database=Panes;Trusted_Connection=True;TrustServerCertificate=True;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
